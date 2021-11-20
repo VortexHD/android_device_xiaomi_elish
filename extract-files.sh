@@ -13,7 +13,7 @@ fi
 
 set -e
 
-export DEVICE=alioth
+export DEVICE=elish
 export DEVICE_COMMON=sm8250-common
 export VENDOR=xiaomi
 

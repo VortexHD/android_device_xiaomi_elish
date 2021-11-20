@@ -7,7 +7,7 @@
 # Inherit from sm8250-common
 include device/xiaomi/sm8250-common/BoardConfigCommon.mk
 
-DEVICE_PATH := device/xiaomi/alioth
+DEVICE_PATH := device/xiaomi/elish
 
 BUILD_BROKEN_DUP_RULES := true
 
@@ -35,17 +35,17 @@ TARGET_BOARD_INFO_FILE := $(DEVICE_PATH)/board-info.txt
 TARGET_SCREEN_DENSITY := 420
 
 # Init
-TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):init_xiaomi_alioth
-TARGET_RECOVERY_DEVICE_MODULES := init_xiaomi_alioth
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):init_xiaomi_elish
+TARGET_RECOVERY_DEVICE_MODULES := init_xiaomi_elish
 
 # Kernel
-TARGET_KERNEL_CONFIG := vendor/alioth_defconfig
+TARGET_KERNEL_CONFIG := vendor/elish_defconfig
 
 # OTA assert
-TARGET_OTA_ASSERT_DEVICE := alioth,aliothin
+TARGET_OTA_ASSERT_DEVICE := elish
 
 # Properties
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 
 # Inherit from the proprietary version
-include vendor/xiaomi/alioth/BoardConfigVendor.mk
+include vendor/xiaomi/elish/BoardConfigVendor.mk
